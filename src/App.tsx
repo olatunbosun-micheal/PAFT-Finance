@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { HashRouter } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "@/components/ScrollToTop";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import Landing from "./pages/Landing";
@@ -31,7 +31,7 @@ const App = () => {
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        <HashRouter>
           <ScrollToTop />
           <ScrollToTopButton />
           <Routes>
@@ -53,9 +53,9 @@ const App = () => {
             <Route path="/faqs" element={<FAQs />} />
             <Route path="/support" element={<Support />} />
             <Route path="/terms" element={<Terms />} />
-            <Route path="*" element={<NotFound />} />
+            <Route path="*" elemeSnt={<NotFound />} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </TooltipProvider>
     </QueryClientProvider>
   );
