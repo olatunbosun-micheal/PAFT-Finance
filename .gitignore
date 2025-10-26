@@ -1,0 +1,42 @@
+# Dependency directories
+node_modules/
+.pnpm-store/
+.yarn/
+
+# Build output
+dist/
+build/
+dist-ssr/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Editor settings
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Cache
+.cache/
+.temp/
+
+# Don’t ignore videos or assets (they must be pushed)
+# public/videos/
+# public/assets/
